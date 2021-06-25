@@ -17,7 +17,7 @@ spec:
         "acr-teleport": "disabled"
       containers:
       - name: azure-vote-back-shuttle
-        image: <registryName>.azurecr.io/redis:6.0.8
+        image: h2oacr.azurecr.io/redis:6.0.8
         env:
         - name: ALLOW_EMPTY_PASSWORD
           value: "yes"
@@ -61,7 +61,7 @@ spec:
         "acr-teleport": disabled
       containers:
       - name: azure-vote-front-shuttle
-        image: <registryName>.azurecr.io/azure-vote-front:v1
+        image: h2oacr.azurecr.io/azure-vote-front:v1
         resources:
           requests:
             cpu: 100m
